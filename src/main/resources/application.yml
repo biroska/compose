@@ -7,11 +7,11 @@ spring:
   config:
     activate:
       on-profile: default, dev
-    import: "classpath:application-dev.yml"
+    import: "classpath:application-dev.yml, classpath:tmdb.yml"
 ---
 spring:
   config:
     activate:
       on-profile: local
-    import: "classpath:application-local.yml"
+    import: "classpath:application-local.yml, classpath:tmdb.yml"
 
