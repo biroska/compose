@@ -15,6 +15,9 @@ public class CompositionApplication {
     @Value("${application.version}")
     private String version;
 
+    @Value("${tmdb.api.domain}")
+    private String domain;
+
     public static void main(String[] args) {
         SpringApplication.run(CompositionApplication.class, args);
     }
@@ -22,7 +25,7 @@ public class CompositionApplication {
 
     @RequestMapping("/")
     String home() {
-        return MessageFormat.format("Hello World! {0}", version);
+        return MessageFormat.format("Hello World! {0} - Domain {1}", version, domain);
     }
 
 }
