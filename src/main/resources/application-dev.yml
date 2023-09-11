@@ -1,0 +1,10 @@
+
+application:
+  version: "1.0"
+
+
+tmdb:
+  api:
+    api-key: "5380d3c9c1becdd26c9e31d900053498"
+    access-token: "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MzgwZDNjOWMxYmVjZGQyNmM5ZTMxZDkwMDA1MzQ5OCIsInN1YiI6IjVjN2YwYzcwYzNhMzY4NGU5OGQyYmIxOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.fO5FaE5tBuh_ezP3XP0SwYkjLOIw78Hc1LhlqUjrDDU"
+    top-rated: "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1"

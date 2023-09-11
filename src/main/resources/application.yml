@@ -1,0 +1,17 @@
+
+spring:
+  profiles:
+    active: local
+---
+spring:
+  config:
+    activate:
+      on-profile: default, dev
+    import: "classpath:application-dev.yml"
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+    import: "classpath:application-local.yml"
+
